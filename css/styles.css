@@ -473,6 +473,7 @@ color: var(--main-color);
 
 .footer-flex-box{
     display: flex;
+    justify-content: space-between;
    
 }
 .subscribe-us{
