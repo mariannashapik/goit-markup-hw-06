@@ -886,23 +886,26 @@ border-radius: 4px;
            }
 
           .modal-form-own-checkbox-icon-on {
-           
-            fill: #2196F3;
-           border: #ECECEC;
+        fill: #2196F3;
+    
            
           }
-
-        
-          .modal-form-check:checked + .modal-form-own-checkbox-on .modal-form-own-checkbox-icon-on {
+          .modal-form-own-checkbox-off {
             display: block;
-            border:none;
-          }
-
-          .modal-form-check:checked + .modal-form-own-checkbox-off .modal-form-own-checkbox-icon-off {
+        }
+          .modal-form-own-checkbox-on {
             display:none;
-            
-          }
-
+        }
+          .modal-form-check:checked ~ .modal-form-own-checkbox-on {
+              display: block;
+              border:none;
+            }
+  
+          .modal-form-check:checked ~ .modal-form-own-checkbox-off {
+              display:none;
+            }
+        
+          
           .modal-form-send {
             min-width: 200px;
             min-height: 50px;
